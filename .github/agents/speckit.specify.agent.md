@@ -104,6 +104,7 @@ Given that feature description, do this:
      ```
      Write the actual resolved directory path value (for example, `specs/003-user-auth`), not the literal string `SPECIFY_FEATURE_DIRECTORY`.
      This allows downstream commands (`/speckit.plan`, `/speckit.tasks`, etc.) to locate the feature directory without relying on git branch name conventions.
+   - **PowerShell safety rule**: when running on Windows/PowerShell, MUST NOT build this JSON with a here-string (`@' ... '@` or `@\" ... \"@`), especially not inline. Dot-source `.specify/scripts/powershell/common.ps1` and call `Save-FeatureJson -RepoRoot <repo-root> -FeatureDirectory <resolved-feature-dir>` instead. This is the canonical writer for `.specify/feature.json` and avoids PowerShell here-string parser failures.
 
    **IMPORTANT**:
    - You must only create one feature per `/speckit.specify` invocation
