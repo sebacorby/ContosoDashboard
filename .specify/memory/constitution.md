@@ -1,13 +1,3 @@
-<!--
-Sync Impact Report
-- Version change: unversioned template → 1.0.0
-- Modified principles: none; initial constitution established.
-- Added sections: Core Principles; Training and Security Constraints; Development Workflow;
-	Governance.
-- Removed sections: none.
-- Follow-up TODOs: Ratification date requires confirmation from the project owner.
--->
-
 # ContosoDashboard Constitution
 
 ## Core Principles
